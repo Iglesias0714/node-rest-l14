@@ -15,7 +15,7 @@ RUN npm install
 COPY . /app
 
 #Exponer el puerto 80
-EXPOSE 80
+EXPOSE 3000
 
 # Iniciar el servidor de node 
 CMD [ "npm", "start" ]

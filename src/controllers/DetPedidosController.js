@@ -1,22 +1,22 @@
-const ProductosModel= require("../models/ProductosModel");
+const DetPedidosModel= require("../models/DetPedidosModel");
 
-class ProductosController
+class DetPedidosController
 {
     static async indexGet(req, res)
     {
-        let data = await ProductosModel.consultar();
+        let data = await DetPedidosModel.consultar();
         res.send(data);
     }
     static async itemGet(req, res){
         let id = req.params.id;
-        let data = await ProductosModel.consultarPorId(id);
+        let data = await DetPedidosController.consultarPorId(id);
         res.send(data);
     }
     static async indexPost(req, res) {
         try {
             const newData = req.body;
 
-            const insertedId = await ProductosModel.insertar(newData);
+            const insertedId = await DetPedidosModel.insertar(newData);
 
             res.status(201)
                 .header('Location',`/temas/${insertedId}`)
@@ -28,4 +28,4 @@ class ProductosController
     } 
 }
 
-module.exports = ProductosController;
+module.exports = DetPedidosController;

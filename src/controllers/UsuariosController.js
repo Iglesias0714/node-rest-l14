@@ -1,22 +1,22 @@
-const ProductosModel= require("../models/ProductosModel");
+const UsuariosModel = require("../models/UsuariosModel");
 
-class ProductosController
+class UsuariosController
 {
     static async indexGet(req, res)
     {
-        let data = await ProductosModel.consultar();
+        let data = await UsuariosModel.consultar();
         res.send(data);
     }
     static async itemGet(req, res){
         let id = req.params.id;
-        let data = await ProductosModel.consultarPorId(id);
+        let data = await UsuariosModel.consultarPorId(id);
         res.send(data);
     }
     static async indexPost(req, res) {
         try {
             const newData = req.body;
 
-            const insertedId = await ProductosModel.insertar(newData);
+            const insertedId = await UsuariosModel.insertar(newData);
 
             res.status(201)
                 .header('Location',`/temas/${insertedId}`)
@@ -28,4 +28,4 @@ class ProductosController
     } 
 }
 
-module.exports = ProductosController;
+module.exports = UsuariosController;

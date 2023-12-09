@@ -1,37 +1,43 @@
-CREATE DATABASE IF NOT EXISTS restaurante;
+CREATE DATABASE IF NOT EXISTS EmpathiShop;
 
-USE restaurante;
+USE EmpathiShop;
 
-Create Table productos_tipos (
-    id_tipo INTEGER NOT NULL AUTO_INCREMENT,
-    nombre VARCHAR(255) NOT NULL,
-    PRIMARY KEY (id_tipo)
-)
+-- Tabla de Usuarios
+CREATE TABLE Usuarios (
+    UserID INT PRIMARY KEY,
+    Nombre VARCHAR(50) NOT NULL,
+    Apellido VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Contraseña VARCHAR(255) NOT NULL
+);
 
-CREATE TABLE menus (
-    id_menu INTEGER NOT NULL AUTO_INCREMENT,
-    nombre VARCHAR(255) NOT NULL,
-    hora_inicio TIME NOT NULL,
-    hora_fin TIME NOT NULL,
-    PRIMARY KEY (id_categoria)
-)
+-- Tabla de Productos
+CREATE TABLE Productos (
+    ProductoID INT PRIMARY KEY,
+    NombreProducto VARCHAR(100) NOT NULL,
+    Descripcion TEXT,
+    Precio DECIMAL(10, 2) NOT NULL,
+    Stock INT NOT NULL,
+    Categoria VARCHAR(50) NOT NULL
+);
 
-CREATE TABLE categorias (
-    id_categoria INTEGER NOT NULL AUTO_INCREMENT,
-    fk_id_menu INTEGER NOT NULL,
-    nombre VARCHAR(255) NOT NULL,
-    PRIMARY KEY (id_categoria),
-    FOREIGN KEY (fk_id_menu) REFERENCES menus(id_menu)
-)
+-- Tabla de Pedidos
+CREATE TABLE Pedidos (
+    PedidoID INT PRIMARY KEY,
+    UserID INT,
+    FechaPedido DATE NOT NULL,
+    Estado VARCHAR(50) NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES Usuarios(UserID)
+);
 
-CREATE TABLE productos (
-    id_producto INTEGER NOT NULL AUTO_INCREMENT,
-    descripcion VARCHAR(255) NOT NULL,
-    precio DECIAML(5,2) NOT NULL,
-    fk_id_tipo INTEGER NOT NULL,
-    fk_id_categoria INTEGER NOT NULL,
-    PRIMARY KEY (id_producto),
-    FOREIGN KEY (fk_id_tipo) REFERENCES productos_tipos(id_tipo),
-    FOREIGN KEY (fk_id_categoria) REFERENCES productos_tipos(id_categoria)
+-- Detalles del Pedido (relaciona productos y pedidos)
+CREATE TABLE DetallesPedido (
+    DetalleID INT PRIMARY KEY,
+    PedidoID INT,
+    ProductoID INT,
+    Cantidad INT NOT NULL,
+    PrecioUnitario DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (PedidoID) REFERENCES Pedidos(PedidoID),
+    FOREIGN KEY (ProductoID) REFERENCES Productos(ProductoID)
 );
 
