@@ -5,7 +5,7 @@ EmpathiShop es una plataforma integral que combina tecnologías modernas para br
 Clonar el repositorio en la máquina local:
    
    ```sh
-   git clone 
+   git clone https://github.com/Iglesias0714/node-rest-l14.git
    ```
 
 ## Configuración del Proyecto
