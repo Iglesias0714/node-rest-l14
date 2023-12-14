@@ -77,3 +77,15 @@ docker-compose up -d
 
 - **POST /detalles-pedido**
   - Crea un nuevo detalle de pedido.
+
+ La API estará disponible en `http://localhost:3000`.
+
+## Documentación detallada
+
+Para obtener información detallada sobre los endpoints y cómo utilizar la API,
+consulta la [documentación detallada](./endpoints).
+
+## Enlaces externos
+
+- [Node.js](https://www.nodejs.org)
+- [Docker](https://www.docker.com)
