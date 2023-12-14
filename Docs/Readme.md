@@ -14,9 +14,9 @@ EmpathiShop es una Marketplace enfocado a personas con discapacidad, ofrece cual
 | [`GET /productos/{id}`](./Endpoints//get-productos{id}.md) | Obtiene información detallada sobre un producto específico. |
 | [`GET /pedidos`](./Endpoints//get-pedidos.md)             | Recupera la lista de todos los pedidos disponibles. | 
 | [`GET /pedidos/{id}`](./Endpoints//get-pedidos{id}.md)        | Obtiene información detallada sobre un pedido específico. |
-| [`GET /detallespedidos`](./Endpoints//get-detalles-pedidos.md)             | Recupera la lista de todos los detalles de un pedido disponibles. | 
-| [`GET /detallespedidos/{id}`](./Endpoints//get-detalles-pedidos{id}.md)      | Obtiene información detallada sobre los detalles de un pedido específico. |
+| [`GET /detalles-pedidos`](./Endpoints//get-detalles-pedidos.md)             | Recupera la lista de todos los detalles de un pedido disponibles. | 
+| [`GET /detalles-pedidos/{id}`](./Endpoints//get-detalles-pedidos{id}.md)      | Obtiene información detallada sobre los detalles de un pedido específico. |
 | [`POST /usuarios/{id}/`](./Endpoints//post-usuarios.md) | Se usa para modificar el id de un usuario |
 | [`POST /productos/{id}`](./Endpoints//post-productos.md) | Se usa para modificar el id de un producto |         
 | [`POST /pedidos/{id}`](./Endpoints//post-pedidos.md)      | Se usa para modificar el id de un pedido |     
-| [`POST /detallespedidos/{id}`](./Endpoints//post-detalles-pedidos.md)  | Se usa para modificar el id del detalle de un pedido |         
+| [`POST /detalles-pedidos/{id}`](./Endpoints//post-detalles-pedidos.md)  | Se usa para modificar el id del detalle de un pedido |         
