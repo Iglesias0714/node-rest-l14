@@ -1,6 +1,6 @@
 ## Agregar un Nuevo Producto
-# Endpoint: POST /productos
-# Permite agregar un nuevo producto al catálogo de EmpathiShop.
+#Endpoint: POST /productos
+ Permite agregar un nuevo producto al catálogo de EmpathiShop.
 
 # Ejemplo de Solicitud
 
