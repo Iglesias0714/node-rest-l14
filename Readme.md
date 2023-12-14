@@ -83,7 +83,7 @@ docker-compose up -d
 ## Documentación detallada
 
 Para obtener información detallada sobre los endpoints y cómo utilizar la API,
-consulta la [documentación detallada](./endpoints).
+consulta la [documentación detallada](./Endpoints).
 
 ## Enlaces externos
 
