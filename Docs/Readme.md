@@ -1,5 +1,7 @@
-Documentación de la API RESTful
-Bienvenido a la documentación de la API.
+### Documentación de la API RESTful
+
+## Bienvenido a la documentación de la API.
+
 A continuación, se presenta una lista de endpoints disponibles.
 Descripción General de Endpoints
 Usuarios
