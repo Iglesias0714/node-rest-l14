@@ -1,7 +1,7 @@
 ### Documentación de la API RESTful
 
 ## Bienvenido a la documentación de la API.
-Bienvenido a la documentación de Lorenzzo. A continuación, se presenta una descripción general de este mismo, los requisitos, instrucciones de instalación y una lista de endpoints disponibles con enlaces a sus respectivas documentaciones detalladas.
+Bienvenido a la documentación de EmpathiShop. A continuación, se presenta una descripción general de este mismo, los requisitos, instrucciones de instalación y una lista de endpoints disponibles con enlaces a sus respectivas documentaciones detalladas.
 
 ## Descripción General del proyecto
 EmpathiShop es una Marketplace enfocado a personas con discapacidad, ofrece cualquier tipo de aparato adaptativo.
