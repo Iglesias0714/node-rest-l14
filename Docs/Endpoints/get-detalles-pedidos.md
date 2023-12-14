@@ -36,17 +36,10 @@ GET /detalles-pedidos
 }
 ```
 - Código 500 Internal Server Error
-- 
-{
-  "errno": 500,
-  "error": "internal_error",
-  "error_description": "Ocurrió un problema para procesar la solicitud."
-}
  ```json
 {
   "errno": 500,
   "error": "internal_error",
   "error_description": "Ocurrió un problema para procesar la solicitud."
 }
-
 ```
