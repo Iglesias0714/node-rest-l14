@@ -1,46 +1,22 @@
 ### Documentación de la API RESTful
 
 ## Bienvenido a la documentación de la API.
+Bienvenido a la documentación de Lorenzzo. A continuación, se presenta una descripción general de este mismo, los requisitos, instrucciones de instalación y una lista de endpoints disponibles con enlaces a sus respectivas documentaciones detalladas.
 
-A continuación, se presenta una lista de endpoints disponibles.
-Descripción General de Endpoints
-Usuarios
-GET /usuarios
+## Descripción General del proyecto
+EmpathiShop es una Marketplace enfocado a personas con discapacidad, ofrece cualquier tipo de aparato adaptativo.
 
-Recupera la lista de todos los usuarios registrados en EmpathiShop.
-GET /usuarios/{id}
-
-Obtiene información detallada sobre un usuario específico por su ID.
-POST /usuarios
-
-Registra un nuevo usuario en EmpathiShop.
-Productos
-GET /productos
-
-Recupera la lista de productos disponibles en el marketplace EmpathiShop.
-GET /productos/{id}
-
-Obtiene información detallada sobre un producto específico por su ID.
-POST /productos
-
-Agrega un nuevo producto al catálogo de EmpathiShop.
-Pedidos
-GET /pedidos
-
-Recupera la lista de todos los pedidos realizados en EmpathiShop.
-GET /pedidos/{id}
-
-Obtiene información detallada sobre un pedido específico por su ID.
-POST /pedidos
-
-Realiza un nuevo pedido en EmpathiShop.
-Detalles de Pedido
-GET /detalles-pedido
-
-Recupera la lista de detalles de pedidos asociados a los pedidos en EmpathiShop.
-GET /detalles-pedido/{id}
-
-Obtiene información detallada sobre un detalle de pedido específico por su ID.
-POST /detalles-pedido
-
-Agrega un nuevo detalle de pedido a un pedido existente en EmpathiShop.
+| Recurso                    | Descripción |
+| -------------------------- | ----------- |
+| [`GET /usuarios`](./Endpoints//get-usuarios.md)            | Recupera la lista de todos los usuarios disponibles. |  
+| [`GET /usuarios/{id}/`](./Endpoints//get-usuarios{id}.md) | Obtiene la lista de un usuario específico. |
+| [`GET /productos`](./Endpoints//get-productos.md)             | Recupera la lista de todos los productos disponibles. | 
+| [`GET /productos/{id}`](./Endpoints//get-productos{id}.md) | Obtiene información detallada sobre un producto específico. |
+| [`GET /pedidos`](./Endpoints//get-pedidos.md)             | Recupera la lista de todos los pedidos disponibles. | 
+| [`GET /pedidos/{id}`](./Endpoints//get-pedidos{id}.md)        | Obtiene información detallada sobre un pedido específico. |
+| [`GET /detallespedidos`](./Endpoints//get-detalles-pedidos.md)             | Recupera la lista de todos los detalles de un pedido disponibles. | 
+| [`GET /detallespedidos/{id}`](./Endpoints//get-detalles-pedidos{id}.md)      | Obtiene información detallada sobre los detalles de un pedido específico. |
+| [`POST /usuarios/{id}/`](./Endpoints//post-usuarios.md) | Se usa para modificar el id de un usuario |
+| [`POST /productos/{id}`](./Endpoints//post-productos.md) | Se usa para modificar el id de un producto |         
+| [`POST /pedidos/{id}`](./Endpoints//post-pedidos.md)      | Se usa para modificar el id de un pedido |     
+| [`POST /detallespedidos/{id}`](./Endpoints//post-detalles-pedidos.md)  | Se usa para modificar el id del detalle de un pedido |         
